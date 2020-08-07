@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-tis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danzstorm/ProyectoTIS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danzstorm/ProyectoTIS/issues"
+  },
+  "homepage": "https://github.com/Danzstorm/ProyectoTIS#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "stripe": "^8.83.0"
+  }
+}

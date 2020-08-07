@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto-Detalle</title>
+    <link rel="stylesheet" href="css/producto-detail.css">
+</head>
+<body>
+    <main class="container">
+        <!--Columna izquierda/Imagen del plato-->
+        <div class="left-column">
+            <img data-image="black" src="images/lomo-saltado.jpg" alt="">
+            <img data-image="blue" src="images/lomo-saltado.jpg" alt="">
+            <img data-image="red" class="active" src="images/lomo-saltado.jpg" alt="">
+        </div>
+        <!--Columna derecha-->
+        <div class="right-column">
+            <!--Descripcion del producto-->
+            <div class="product-description">
+                <span>Plato</span>
+                <h1>Lomo Saltado</h1>
+                <p>Plato bandera del Peru y especialidad de la casa</p>
+            </div>
+            <!--Configuracion del producto-->
+            <div class="product-configuration">
+                <div class="ingrediente-quitar">
+                        <form action="">
+                            <fieldset> 
+                                <legend>Quitar Ingrediente</legend>
+                                <p>
+                                    <label for="">Seleccionar</label>
+                                    <select name="" id="ingredientes">
+                                        <option value="1">cebolla</option>
+                                        <option value="2">arroz</option>
+                                        <option value="3">papas fritas</option>
+                                    </select>
+                                </p>
+                            </fieldset>
+                        </form>  
+                </div>
+
+                <div class="ingrediente-extra">
+                    <form action="">
+                        <fieldset> 
+                            <legend>Anadir extras</legend>
+                            <p>
+                                <label for="">Seleccionar</label>
+                                <select name="" id="extras">
+                                    <option value="1">porcion de carne</option>
+                                    <option value="2">arroz</option>
+                                    <option value="3">papas fritas</option>
+                                    <option value="4">huevo frito</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                    </form>  
+                 </div>
+            </div>
+            <!--Precio del plato-->
+            <div class="product-price">
+                <span>S/.18.00</span>
+                <a href="#" class="cart-btn">Anadir al carrito</a>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="js/producto-detail.js" type="text/javascript" />
+</html>

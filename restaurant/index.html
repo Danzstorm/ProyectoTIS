@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
 
     <!-- Site Metas -->
-    <title>Food Funday Restaurant - One page HTML Responsive</title>
+    <title>Las Brisas en la Plazuela</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="css/sweetalert2.min.css">
-
+  
     <!-- Modernizer -->
     <script src="js/modernizer.js"></script>
 
@@ -54,28 +54,27 @@
                         <!-- navbar -->
                         <nav class="navbar navbar-default" id="mainNav">
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
+                                
                                 <div class="logo">
                                     <a class="navbar-brand js-scroll-trigger logo-header" href="#">
-                                        <img src="images/logo.png" alt="">
+                                        <img class="portada"src="images/logo_pescado.jpg" alt="">
+                                        <ul class="nav navbar-nav navbar-left">
+                                            <li class="active"><a href="#">LAS BRISAS EN LA PLAZUELA</a></li>
+                                        </ul>  
                                     </a>
                                 </div>
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav navbar-left">
+                               
+                                <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a href="#banner">Inicio</a></li>
                                     <li><a href="#about">Nosotros</a></li>
                                     <li><a href="#menu">Menu</a></li>
                                     <li><a href="#our_team">Equipo</a></li>
                                     <li><a href="#gallery">Galeria</a></li>
                                     <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#reservation">Reservaciones</a></li>
                                     <li><a href="#footer">Contáctanos</a></li>
+                                    <li><a href="carta.html">Carta</a></li>
                                     <li class="nav-item dropdown">
                                         <img src="images/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="50px"
                                             width="50px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
@@ -94,11 +93,11 @@
                                             </table>
         
                                             <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block primer-boton">Vaciar Carrito</a>
-                                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block segundo-boton">Procesar
-                                                Compra</a>
+                                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block segundo-boton">Procesar Compra</a>
                                         </div>
-                                    </li>
-                                </ul>
+                                    </li>                                               
+                                                                                                  
+                                 </ul>
                             </div>
                             <!-- end nav-collapse -->
                         </nav>
@@ -112,16 +111,20 @@
         <!-- end header -->
     </div>
     <!-- end site-header -->
-    <div class="item-fixed">
-        
-        <div class="box-white boo">
-        <a href="#" data-toggle="modal" data-target="#login">
-        <span><i class="icon user"></i></span>
-        <span>MI CUENTA</span>
-        </a>
-        </div>
-    </div>
-	
+  <div class="item-fixed">
+      <div class="box-white boo">
+          <a href="miCuenta.html">
+              <span>
+                  <i class="icon user"></i>
+              </span>
+              <a href="miCuenta.html" class="btn btn-info btn-block">MI CUENTA</a>
+          </a>
+      </div>
+  </div>
+       
+         
+
+    
     <div id="banner" class="banner full-screen-mode parallax">
         <div class="container pr">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -132,7 +135,7 @@
                             <h2>Las Brisas en la Plazuela</h2>
                             <p>¡Prueba nuestros deliciosos platillos!</p>
                             <div class="book-btn">
-                                <a href="#reservation" class="table-btn hvr-underline-from-center">Reservaciones</a>
+                                <a href="#menu" class="table-btn hvr-underline-from-center">Comprar</a>
                             </div>
                             <a href="#about">
                                 <div class="mouse"></div>
@@ -186,7 +189,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
                         <h2 class="block-title color-white text-center"> Especial del día </h2>
-                        <h5 class="title-caption text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia,nostrud exercitation ullamco. </h5>
+                        <h5 class="title-caption text-center">El especial del día son los productos que están en promoción, podrá disfrutarlos y ahorrarse un poco. </h5>
                     </div>
                     <div class="special-box">
                         <div id="owl-demo">
@@ -194,9 +197,11 @@
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
-                                            SALMON STEAK
+                                            FILETE DE SALMON
                                             <div class="line"></div>
-                                            <div class="dit-line">Lorem ipsum dolor sit amet, consectetur adip aliqua. Ut enim ad minim venia.</div>
+                                            <div class="dit-line">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adip aliqua. Ut enim ad minim venia.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -208,7 +213,7 @@
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
-                                            ITALIAN PIZZA
+                                            PIZZA ITALIANA
                                             <div class="line"></div>
                                             <div class="dit-line">Lorem ipsum dolor sit amet, consectetur adip aliqua. Ut enim ad minim venia.</div>
                                         </div>
@@ -222,7 +227,7 @@
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
-                                            VEG. ROLL
+                                            ROLL VEGETARIANO
                                             <div class="line"></div>
                                             <div class="dit-line">Lorem ipsum dolor sit amet, consectetur adip aliqua. Ut enim ad minim venia.</div>
                                         </div>
@@ -236,7 +241,7 @@
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
-                                            SALMON STEAK
+                                            FILETE DE SALMON
                                             <div class="line"></div>
                                             <div class="dit-line">Lorem ipsum dolor sit amet, consectetur adip aliqua. Ut enim ad minim venia.</div>
                                         </div>
@@ -250,7 +255,7 @@
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
-                                            VEG. ROLL
+                                            ROLL VEGETARIANO
                                             <div class="line"></div>
                                             <div class="dit-line">Lorem ipsum dolor sit amet, consectetur adip aliqua. Ut enim ad minim venia.</div>
                                         </div>
@@ -307,13 +312,14 @@
                                     <div class="offer-item">
                                         <img src="images/menu-item-thumbnail-01.jpg" alt="" class="img-responsive">
                                         <div>
-                                            <h3>GARLIC BREAD</h3>
-                                            
+                                            <h3>PAN DE AJO</h3>
+                                            <p>El pan de ajo consiste típicamente en pan cubierto con ajo y aceite de oliva </p>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
                                             <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
                                             
                                         </div>
                                       
-                                        <span class="offer-price">S/8.5</span>
+                                        <span class="offer-price">8.5</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -321,10 +327,12 @@
                                     <div class="offer-item">
                                         <img src="images/menu-item-thumbnail-02.jpg" alt="" class="img-responsive">
                                         <div>
-                                            <h3>MIXED SALAD</h3>
+                                            <h3>ENSALADA MIXTA</h3>
+                                            <p>Es una ensalada básica que siempre nos ha acompañado en nuestras vidas </p>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
                                             <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/25</span>
+                                        <span class="offer-price">25</span>
                                         
                                     </div>
                                 </div>
@@ -333,10 +341,12 @@
                                     <div class="offer-item">
                                         <img src="images/menu-item-thumbnail-03.jpg" alt="" class="img-responsive">
                                         <div>
-                                            <h3>BBQ CHICKEN WINGS</h3>
+                                            <h3>ALITAS DE POLLO BBQ</h3>
+                                            
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
                                             <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/10</span>
+                                        <span class="offer-price">10</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -347,9 +357,10 @@
                                         <img src="images/menu-item-thumbnail-04.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>MEAT FEAST PIZZA</h3>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
                                             <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/5</span>
+                                        <span class="offer-price">5</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -358,9 +369,10 @@
                                         <img src="images/menu-item-thumbnail-05.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>CHICKEN TIKKA MASALA</h3>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
                                             <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/15</span>
+                                        <span class="offer-price">15</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -369,11 +381,13 @@
                                         <img src="images/menu-item-thumbnail-06.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>SPICY MEATBALLS</h3>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
                                             <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/6.5</span>
+                                        <span class="offer-price">6.5</span>
                                     </div>
                                 </div>
+                             
                                 <!-- end col -->
                             </div>
                             <div>
@@ -382,9 +396,10 @@
                                         <img src="images/menu-item-thumbnail-07.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>CHOCOLATE FUDGECAKE</h3>
-                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/4.5</span>
+                                        <span class="offer-price">4.5</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -393,9 +408,10 @@
                                         <img src="images/menu-item-thumbnail-08.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>CHICKEN TIKKA MASALA</h3>
-                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/9.5</span>
+                                        <span class="offer-price">9.5</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -404,9 +420,10 @@
                                         <img src="images/menu-item-thumbnail-09.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>CHICKEN TIKKA MASALA</h3>
-                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/10</span>
+                                        <span class="offer-price">10</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -417,9 +434,10 @@
                                         <img src="images/menu-item-thumbnail-10.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>MEAT FEAST PIZZA</h3>
-                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Comprar</a>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/12.5</span>
+                                        <span class="offer-price">12.5</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -428,9 +446,10 @@
                                         <img src="images/menu-item-thumbnail-09.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>CHICKEN TIKKA MASALA</h3>
-                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11">Comprar</a>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/9.5</span>
+                                        <span class="offer-price">9.5</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -439,9 +458,10 @@
                                         <img src="images/menu-item-thumbnail-08.jpg" alt="" class="img-responsive">
                                         <div>
                                             <h3>CHICKEN TIKKA MASALA</h3>
-                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12">Comprar</a>
+                                            <a href="" class="btn btn-block btn-primary">Ver detalles</a>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="13">Comprar</a>
                                         </div>
-                                        <span class="offer-price">S/5.5</span>
+                                        <span class="offer-price">5.5</span>
                                     </div>
                                 </div>
                                 <!-- end col -->
@@ -979,7 +999,10 @@
                     <div class="footer-in-main">
                         <div class="footer-logo">
                             <div class="text-center">
-                                <img src="images/logo.png" alt="" />
+                                <img class="portada" src="images/logo_pescado.jpg" alt="" />
+                                
+                                    <h1 class="active"><a href="#">LAS BRISAS EN LA PLAZUELA</a></h1>
+                                 
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -1046,7 +1069,7 @@
                                 </p>
                                 <p>
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <span><a href="#">Food.Funday@gmail.com</a></span>
+                                    <span><a href="#">Brisas.Plazuela@gmail.com</a></span>
                                 </p>
                             </div>
                             <!-- end footer-box-c -->
@@ -1080,7 +1103,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h6 class="copy-title"> Copyright &copy; 2020 Food Funday  <a href="#" target="_blank"></a> </h6>
+                            <h6 class="copy-title"> Copyright &copy; 2020 Las Brisas en la Plazuela  <a href="#" target="_blank"></a> </h6>
                         </div>
                     </div>
                     <!-- end row -->
@@ -1119,6 +1142,7 @@
 
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+    
     
 </body>
 

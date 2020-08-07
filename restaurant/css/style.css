@@ -264,6 +264,10 @@ html, body{ height: 100%; }
 .logo{
 	float:left;
 }
+.portada{
+     width:60px;
+     height:70px;
+}
 .header-block-top{
 	position: absolute;
     z-index: 11;
@@ -710,6 +714,9 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+/* ----------------------------------------------------------------
+     REGISTRO LOGIN
+------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
     ABOUT AREA

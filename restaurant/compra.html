@@ -6,14 +6,16 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <script src="js/modernizer.js"></script>
 
-    <link rel="stylesheet" href="css2/sweetalert2.min.css">
-
-    <title>Carrito Compras en JavaScript</title>
+    <title>Carrito de compras</title>
 
 </head>
 
@@ -22,7 +24,7 @@
         <div class="container">
             <div class="row justify-content-between mb-5">
                 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                    <a class="navbar-brand" href="index.html">BODEGUITA FLORES EIRL</a>
+                    <a class="navbar-brand" href="index.html">LAS BRISAS EN LA PLAZUELA</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -95,17 +97,145 @@
                             </table>
                         </div>
 
-                        <div class="row justify-content-center" id="loaders">
-                            <img id="cargando" src="img/cargando.gif" width="220">
-                        </div>
+              
 
-                        <div class="row justify-content-between">
-                            <div class="col-md-4 mb-2">
+                        <div class="row justify-content-between pad-bottom-70">
+                            <div class="col-md-6 mb-6">
                                 <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
                             </div>
-                            <div class="col-xs-12 col-md-4">
-                                <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                            <div class="col-md-6 mb-6">
+                                <form action="/" method="POST">
+                                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_51HCj3aASo8jHj4CjkY1Y0KajE9XyZmoYlxwGVOKCNnune4fR68SCj0ks26NXqa9hVSiuMRaKeCjQpMd2faEubscR00PjQGalZy"
+                                        data-amount="3000"
+                                        data-name="LAS BRISAS"
+                                        data-description="Restaurante Online"
+                                        data-image="images/logo_pescado.jpg"
+                                        data-locale="Auto">
+                                    </script>
+                                    <script>
+                                        document.getElementsByClassName('stripe-button-el')[0].style.display='none';
+                                    </script>
+                                    <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                                </form>
+                                
+                               
                             </div>
+                        </div>
+
+
+
+                        <div class="footer-box pad-top-70 ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="footer-in-main">
+                                       
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="footer-box-a">
+                                                <h3>Nosotros</h3>
+                                                <p>Somos un restaurante que busca dar una buena experiencia al cliente, dandole servicio de calidad y de manera segura.</p>
+                                                <ul class="socials-box footer-socials pull-left">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                
+                                            </div>
+                                            <!-- end footer-box-a -->
+                                        </div>
+                                        <!-- end col -->
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="footer-box-b">
+                                                <h3>Nuevo Menu</h3>
+                                                <ul>
+                                                    <li><a href="#">Italian Bomba Sandwich</a></li>
+                                                    <li><a href="#">Double Dose of Pork Belly</a></li>
+                                                    <li><a href="#">Spicy Thai Noodles</a></li>
+                                                    <li><a href="#">Triple Truffle Trotters</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- end footer-box-b -->
+                                        </div>
+                                        <!-- end col -->
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="footer-box-c">
+                                                <h3>Contáctanos</h3>
+                                                <p>
+                                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                                    <span>Calle B 53, Distrito de Lima 15311,Perú</span>
+                                                </p>
+                                                <p>
+                                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                                    <span>
+                                                    +51 936300982 
+                                                </span>
+                                                </p>
+                                                <p>
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                    <span><a href="#">Food.Funday@gmail.com</a></span>
+                                                </p>
+                                            </div>
+                                            <!-- end footer-box-c -->
+                                        </div>
+                                        <!-- end col -->
+                                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                            <div class="footer-box-d">
+                                                <h3>Horas Abiertas</h3>
+                
+                                                <ul>
+                                                    <li>
+                                                        <p>Lunes - Jueves</p>
+                                                        <span> 11:00 AM - 9:00 PM</span>
+                                                    </li>
+                                                    <li>
+                                                        <p>Viernes - Sábado </p>
+                                                        <span>  11:00 AM - 5:00 PM</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- end footer-box-d -->
+                                        </div>
+                                        <!-- end col -->
+                                    </div>
+                                    <!-- end footer-in-main -->
+                                </div>
+                                <!-- end row -->
+                            </div>
+                            <!-- end container -->
+                            <div id="copyright" class="copyright-main">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <h6 class="copy-title"> Copyright &copy; 2020 Las Brisas en la Plazuela  <a href="#" target="_blank"></a> </h6>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                                <!-- end container -->
+                            </div>
+                            <!-- end copyright-main -->
                         </div>
                     </form>
 
@@ -127,13 +257,14 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>
-
+    <script src="js/all.js"></script>
+    
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 
     <script src="js/carrito.js"></script>
     <script src="js/compra.js"></script>
-
+    <script src="js/custom.js"></script>
 
 </body>
 
